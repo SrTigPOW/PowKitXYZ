@@ -1,0 +1,14 @@
+{
+  "name": "powkitxyz",
+  "version": "1.0.0",
+  "description": "A simple coming soon website using Express.js",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
