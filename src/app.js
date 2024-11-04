@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.redirect('/app/synch');
 });
 
+app.use((req, res, next) => {
+    res.redirect('/app/synch');
+});
+
 app.get('/app/synch', (req, res) => {
     res.send('Bem-vindo à rota /app/synch');
 });
