@@ -7,7 +7,10 @@ app.get('/', (req, res) => {
 });
 
 app.use((req, res, next) => {
-    res.redirect('/app/synch');
+    if (req.path !== '/app/synch') {
+        return res.redirect('/app/synch');
+    }
+    next();
 });
 
 app.get('/app/synch', (req, res) => {
