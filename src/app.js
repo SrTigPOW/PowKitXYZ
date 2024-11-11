@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get('/app/synch', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'main.html'));
 });
 
 app.use(express.static(path.join(__dirname, 'public')));
