@@ -3,15 +3,11 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.get('/', (req, res) => {
-  res.send('<h1>go to /app/synch</h1>');
-});
-
 app.get('/app/synch', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);
