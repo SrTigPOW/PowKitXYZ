@@ -7,6 +7,10 @@ app.get('/app/synch', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'main.html'));
 });
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'main.html'));
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(port, () => {
