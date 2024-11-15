@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowKit — Home.</title>
+    <title>Home — PowKit</title>
     <link rel="icon" href="/assets/PowKit B&W.png" type="image/png">
     <meta name="description" content="We are a small team of four people who, by supporting each other, accomplish a variety of projects together.">
     <meta name="author" content="SrTig">
@@ -12,16 +12,76 @@
     <meta property="og:image" content="/assets/PowKit B&W.png">
     <style>
         body {
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #000;
+            background-color: #121314;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo-text {
+            position: absolute;
+            top: 45px;
+            left: 120px;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .middle-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -250%);
+            color: #fff;
+            font-size: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .middle-text-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .blue-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-color: #067ec9;
+            color: #fff;
+            padding: 20px 40px;
+            border-radius: 5px;
+            font-size: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 </head>
-<body></body>
+<body>
+    <div class="logo">
+        <img src="/assets/PowKit B&W.png" alt="PowKit Logo">
+    </div>
+    <div class="logo-text">PowKit</div>
+    <div class="middle-text">Bem vindo ao PowKit!</div>
+    <div class="middle-text-content">Somos uma pequena equipe de quatro pessoas que, ao apoiar uns aos outros, realizamos diversos projetos juntos. Clique no botão abaixo para acessar nosso servidor do Discord!</div>
+    <a href="https://discord.gg/T8WjfEf669" class="blue-button">Servidor do Discord</a>
+</body>
 </html>
