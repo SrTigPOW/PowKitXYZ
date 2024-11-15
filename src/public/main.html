@@ -13,75 +13,106 @@
     <style>
         body {
             background-color: #121314;
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
         }
         
-        .logo {
+        /* Seção do logo */
+        .logo-container {
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
         }
 
         .logo img {
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
         }
 
         .logo-text {
-            position: absolute;
-            top: 45px;
-            left: 120px;
-            color: #fff;
-            font-size: 30px;
-            font-family: 'Ubuntu', sans-serif;
+            margin-left: 15px;
+            font-size: 32px;
             font-weight: bold;
-            margin-left: 5px;
         }
 
+        /* Texto principal */
         .middle-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -250%);
-            color: #fff;
-            font-size: 30px;
-            font-family: 'Ubuntu', sans-serif;
+            font-size: 36px;
             font-weight: bold;
+            margin-top: 50px;
+            text-align: center;
         }
 
         .middle-text-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-size: 20px;
-            font-family: 'Ubuntu', sans-serif;
+            font-size: 18px;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 15px;
+            line-height: 1.5;
         }
 
+        /* Botão */
         .blue-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, 50%);
+            display: inline-block;
             background-color: #067ec9;
             color: #fff;
-            padding: 20px 40px;
-            border-radius: 5px;
-            font-size: 30px;
-            font-family: 'Ubuntu', sans-serif;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 24px;
+            margin-top: 30px;
             text-decoration: none;
             font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .blue-button:hover {
+            background-color: #055fa3;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            .logo-text {
+                font-size: 24px;
+            }
+
+            .middle-text {
+                font-size: 28px;
+            }
+
+            .middle-text-content {
+                font-size: 16px;
+            }
+
+            .blue-button {
+                font-size: 20px;
+                padding: 12px 25px;
+            }
         }
     </style>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 </head>
 <body>
-    <div class="logo">
-        <img src="/assets/PowKit B&W.png" alt="PowKit Logo">
+    <div class="logo-container">
+        <div class="logo">
+            <img src="/assets/PowKit B&W.png" alt="PowKit Logo">
+        </div>
+        <div class="logo-text">PowKit</div>
     </div>
-    <div class="logo-text">PowKit</div>
-    <div class="middle-text">Bem vindo ao PowKit!</div>
-    <div class="middle-text-content">Somos uma pequena equipe de quatro pessoas que, ao apoiar uns aos outros, realizamos diversos projetos juntos. Clique no botão abaixo para acessar nosso servidor do Discord!</div>
+
+    <div class="middle-text">Prazer!</div>
+    <div class="middle-text-content">
+        Somos uma pequena equipe de quatro pessoas que, ao apoiar uns aos outros, realizamos diversos projetos juntos.
+    </div>
     <a href="https://discord.gg/T8WjfEf669" class="blue-button">Servidor do Discord</a>
 </body>
 </html>
